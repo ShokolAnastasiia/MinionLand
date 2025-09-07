@@ -41,7 +41,7 @@ main {
 section {
     width: 100%;
     min-height: 100vh;
-    background: #fff09a;
+    background: #fff5bc;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,19 +52,19 @@ section {
 }
 
 .section1 {
-    background-color: #D1BBAA;
+    background-color: #fff5bc;
 }
 
 .section2 {
-    background-color: #C2AB99;
+    background-color: #fff09a;
 }
 
 .section4 {
-    background-color: #D1BBAA;
+    background-color: #fff5bc;
 }
 
 .section3 {
-    background-color: #C2AB99;
+    background-color: #fff09a;
 }
 
 nav {
