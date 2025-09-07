@@ -116,11 +116,11 @@ calc_button.addEventListener('click', calc_price)
 
 // Красива кнопка 'Відправити'
 function make_transparent() {
-    send_btn.style.backgroundColor = 'transparent'
+    send_btn.style.backgroundColor = '#f3b645ff'
 }
  
 function make_colorful() {
-    send_btn.style.backgroundColor = '#C2AB99'
+    send_btn.style.backgroundColor = '#ffc354'
 }
 
 let send_btn = document.querySelector('.submit-btn-send')
