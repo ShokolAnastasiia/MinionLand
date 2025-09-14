@@ -144,8 +144,3 @@ function easter_egg() {
  
 let mars = document.querySelector('.mars1')
 mars.addEventListener('click', easter_egg)
-
-
-
-
-
