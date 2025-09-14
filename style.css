@@ -53,9 +53,9 @@ section {
 
 .section1 {
     background-color: #fff5bc;
-    position: relative;
-     background-size: cover;      /* масштабировать под размер экрана */
-   
+    
+
+    background-size: cover;
     background-repeat: no-repeat; /* не повторять */
     background-position: center; /* центрировать */
 }
@@ -64,7 +64,10 @@ section {
 
 .section2 {
     background-color: #fff1a2;
+    
+ 
 }
+
 
 .section4 {
     background-color: #fff5bc;
@@ -86,12 +89,13 @@ nav {
 .nav-item {
     width: fit-content;
     padding: .5em;
-    border: 2px solid white;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 5px;
     color: white;
     margin-right: 1em;
     user-select: none;
     cursor: pointer;
+   
 }
 
 #team > h1,
@@ -152,17 +156,21 @@ nav {
 }
 
 .team1 .team-item-top {
-    background: url(/uploads/2022/11/astr1.png);
-    background-size: cover;
+    background: url(8.png);
+    background-repeat: no-repeat; /* не повторять */
+    background-position: center; /* центрировать */
+
 }
 
 .team2 .team-item-top {
-    background: url(/uploads/2022/11/astr2.png);
-    background-size: cover;
+    background: url(7.png);
+    
+    background-repeat: no-repeat; /* не повторять */
+    background-position: center; /* центрировать */
 }
 
 .team3 .team-item-top {
-    background: url(/uploads/2022/11/astr3.png);
+    background: url(9.png);
     background-size: cover;
 }
 
