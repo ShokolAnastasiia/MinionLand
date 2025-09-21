@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+.container {
+  width: 90%;   
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -14,7 +20,7 @@ header {
     height: 100vh;
     background: url('https://zastavki.gas-kvas.com/uploads/posts/2024-09/thumbs/zastavki-gas-kvas-com-bhri-p-zastavki-na-rabochii-stol-kompyutera-minon-24.jpg');
     background-size: cover;
-    background-position: center center; 
+    background-position: center; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,13 +57,20 @@ section {
     color: black;
 }
 
-.section1 {
+.section6 {
     background-color: #fff5bc;
-    
-
-    background-size: cover;
+    /*padding-bottom: 500px;*/
+    /*background-size: cover;
     background-repeat: no-repeat; /* не повторять */
-    background-position: center; /* центрировать */
+   /* background-position: center; /* центрировать */
+}
+
+.mini_minion{
+  position: absolute;
+  /*bottom: 0px;*/
+  left: 0px;
+  z-index: 0;
+  bottom: -740px ;
 }
 
 
@@ -197,23 +210,23 @@ nav {
 }
 
 .merch1 .merch-item-top {
-    background: url(/uploads/2022/11/plate.png);
+    background: url(12.png);
     background-size: cover;
 
 }
 
 .merch2 .merch-item-top {
-    background: url(/uploads/2022/11/mug.png);
+    background: url(13.png);
     background-size: cover;
 }
 
 .merch3 .merch-item-top {
-    background: url(/uploads/2022/11/rocket_model.png);
+    background: url(14.png);
     background-size: cover;
 }
 
 .merch4 .merch-item-top {
-    background: url(/uploads/2022/11/rover.png);
+    background: url(15.png);
     background-size: cover;
 }
 
@@ -281,7 +294,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     background: transparent;
     border: none;
-    padding: .5em;
+    padding: 5px;
     border-bottom: 1px solid #5D4229;
     font-size: 1.1em;
     box-sizing: border-box;
@@ -361,9 +374,3 @@ nav {
 }
 
 
-.mini_minion{
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  z-index: 0;
-}
