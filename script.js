@@ -16,13 +16,13 @@ button.addEventListener('click', scrollDown)
 
 // Код, який потрібно виправити
 let item_name_objects = document.querySelectorAll('.merch-item-name')
-let item_names = ['Тарілка', 'Чашка', 'Ракета', 'Марсохід']
+let item_names = ['Футболка', 'Вафельниця', 'Лего', 'Іграшка']
 for (let i = 0; i < item_name_objects.length; i += 1) {
    item_name_objects[i].innerHTML = item_names[i]
 }
 
 let item_descriptions = ['Тарілка з принтом Марсу. Доступна в червоному та білому кольорах', 'Чашка з принтом Марса. Доступна в червоному і білому кольорах', 'Масштабна модель однієї з ракет Galaxy', 'Масштабна модель масохода (ми купуємо їх у NASA)']
-let item_prices = [1000, 1000, 2500, 5000]
+let item_prices = [400, 1452, 1037, 622]
 let item_description_objects = document.querySelectorAll('.merch-item-descr')
 let item_price_objects = document.querySelectorAll('.merch-item-price')
 for (let i = 0; i < item_description_objects.length; i += 1) {
@@ -144,3 +144,8 @@ function easter_egg() {
  
 let mars = document.querySelector('.mars1')
 mars.addEventListener('click', easter_egg)
+
+
+
+
+
