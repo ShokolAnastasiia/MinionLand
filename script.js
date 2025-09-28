@@ -21,7 +21,7 @@ for (let i = 0; i < item_name_objects.length; i += 1) {
    item_name_objects[i].innerHTML = item_names[i]
 }
 
-let item_descriptions = ['Тарілка з принтом Марсу. Доступна в червоному та білому кольорах', 'Чашка з принтом Марса. Доступна в червоному і білому кольорах', 'Масштабна модель однієї з ракет Galaxy', 'Масштабна модель масохода (ми купуємо їх у NASA)']
+let item_descriptions = ['Футболка з принтом міньйона. Доступна в жовтому, сірому, білому та в чорному кольорах', 'Вафельниця миньйон. Доступна в жовтому та помаранчевому кольорах', 'Лего миньйон. Дивовижні фігури і ескраві емоції при збиранні', ' Миньйон Funko POP. Доступні милі фігурки усіх міньйонів']
 let item_prices = [400, 1452, 1037, 622]
 let item_description_objects = document.querySelectorAll('.merch-item-descr')
 let item_price_objects = document.querySelectorAll('.merch-item-price')
@@ -79,21 +79,7 @@ cart_button.addEventListener('click', function() {
 
 
 
-// Код, який змінює тему
-function change_theme() {
-   let header = document.querySelector('header')
-   if (current_background == 'url(/uploads/2022/11/bg_space.png)') {
-       current_background = 'url(/uploads/2022/11/bg_mars.png)'
-   } else {
-       current_background = 'url(/uploads/2022/11/bg_space.png)'
-   }
-   header.style.background = current_background
-   header.style.backgroundSize = 'cover'
-}
- 
-let change_theme_button = document.querySelector('.switch-theme-button')
-let current_background = 'url(/uploads/2022/11/bg_space.png)'
-change_theme_button.addEventListener('click', change_theme)
+
  
 
 // Підрахунок вартості квитка
@@ -144,6 +130,62 @@ function easter_egg() {
  
 let mars = document.querySelector('.mars1')
 mars.addEventListener('click', easter_egg)
+
+// Tranclate
+
+ const minionDict = {
+     "привіт": "Bello",
+  "бувай": "Poopaye",
+  "дякую": "Tank yu",
+  "люблю": "Me want bananaaa!",
+  "так": "Si",
+  "ні": "No",
+  "друг": "Papoi",
+  "їжа": "Bananonina",
+  "грати": "Tulaliloo ti amo",
+  "я": "Me",
+  "тебе": "you",
+  "як у тебе справи": "Tulaliloo?",
+  "як тебе звати": "Para tu nom?",
+  "мене звати": "Me nom",
+  "доброго ранку": "Bello!",
+  "добрий вечір": "Bello papaguena!",
+  "на добраніч": "Poopaye zzz",
+  "мама": "Mamáaaaa",
+  "тато": "Papoiii",
+  "банан": "Banana!!!",
+  "павло": "Pavlito",
+  "настя": "Nasti-banana",
+  "максим": "Maxito-ne-zoxodito-gifthabito"
+    };
+
+ function capitalize(word) {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    }
+
+    function translateToMinion() {
+      let text = document.getElementById("inputText").value.toLowerCase().trim();
+      let result = text;
+
+      for (let phrase in minionDict) {
+        if (text.includes(phrase)) {
+          result = result.replaceAll(phrase, minionDict[phrase]);
+        }
+      }
+
+      const words = result.split(/\s+/);
+      result = words.map(word => {
+        if (minionDict[word]) {
+          return minionDict[word];
+        }
+        return word;
+      }).join(" ");
+
+      document.getElementById("outputText").textContent = result;
+    }
+
+
+
 
 
 
