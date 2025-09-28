@@ -15,6 +15,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h3{
+    font-size: 50px;
+}
+
 header {
     width: 100%;
     height: 100vh;
@@ -57,7 +61,7 @@ section {
     color: black;
 }
 
-.section6 {
+.section1 {
     background-color: #fff5bc;
     /*padding-bottom: 500px;*/
     /*background-size: cover;
@@ -73,6 +77,15 @@ section {
   bottom: -740px ;
 }
 
+.big_minion{
+     position: absolute;
+  /*bottom: 0px;*/
+  left: 0px;
+  z-index: 0;
+  bottom: -2940px ;
+  height: 300px;
+}
+
 
 
 .section2 {
@@ -82,12 +95,16 @@ section {
 }
 
 
-.section4 {
+.section3 {
     background-color: #fff5bc;
 }
 
-.section3 {
-    background-color: #fff1a2;
+.section5 {
+    background-color: #fff5bc;
+}
+
+.section4 {
+    background-color:  #fff1a2;   
 }
 
 nav {
@@ -144,6 +161,7 @@ nav {
 
 .about-wrapper p{
     width: 100%;
+    padding-left: 100px ;
 }
 
 .team-item,
@@ -373,4 +391,37 @@ nav {
     padding: 0 .2em;
 }
 
+
+
+
+
+    h1 {
+      color: #f1c40f;
+      text-shadow: 2px 2px #333;
+    }
+    textarea {
+      width: 80%;
+      height: 80px;
+      margin: 10px 0;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background: #f1c40f;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #f39c12;
+    }
+    .output {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
 
