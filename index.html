@@ -17,16 +17,17 @@
         <div class='nav-item' onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Проєкт</div>
         <div class='nav-item' onclick="document.getElementById('team').scrollIntoView({behavior: 'smooth'});">Команда</div>
         <div class='nav-item' onclick="document.getElementById('merch').scrollIntoView({behavior: 'smooth'});">Мерч</div>
+        <div class='nav-item' onclick="document.getElementById('translate').scrollIntoView({behavior: 'smooth'});">Перекладач</div>
         <div class='nav-item' onclick="document.getElementById('submit').scrollIntoView({behavior: 'smooth'});">Заявка</div>
         <div class='nav-item'><span class='cart-text'>Кошик</span> <span class='cart-amount'>0</span></div>
-        <div class='nav-item switch-theme-button'>Змінити тему</div>
+        
     </nav>
     <header>
-        <h1>Minion <span class='mars mars1'>Land</span></h1>
+        <h3>Minion <span class='mars mars1'>Land</span></h3>
         <div class='arrow-next'><i class='fa-solid fa-arrow-down'></i></div>
     </header>
     <main>
-        <section class='section6' id='about'>
+        <section class='section1' id='about'>
             <h1>Про проєкт</h1>
             <img src="6.png" class="mini_minion">
             <div class='about-wrapper'>
@@ -48,26 +49,26 @@
                     <div class='team-item-top'></div>
                     <div class='team-item-bottom'>
                         <h2>Паша</h2>
-                        <p>Капітан корабля. За плечима десятки польотів і згуртована команда.</p>
+                        <p>Зробив найкращий перекладач на міньйонську мову</p>
                     </div>
                 </div>
                 <div class='team-item team2'>
                     <div class='team-item-top'></div>
                     <div class='team-item-bottom'>
                         <h2>Настя</h2>
-                        <p>Перший пілот. Підніме і приземлить будь-який корабель.</p>
+                        <p> Зробила увесь функціонал і дизайн проєкту</p>
                     </div>
                 </div>
                 <div class='team-item team3'>
                     <div class='team-item-top'></div>
                     <div class='team-item-bottom'>
                         <h2>Максим</h2>
-                        <p>Другий пілот.</p>
+                        <p>Заходив в GitHub</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class='section4' id='merch'>
+        <section class='section3' id='merch'>
             <h1> Бананіто-Мерчініто🍌</h1>
             <div class='merch-wrapper'>
                 <div class='merch-item merch1'>
@@ -112,7 +113,15 @@
                 </div>
             </div>
         </section>
-        <section class='section3' id='submit'>
+        <section class="section4" id="translate">
+<h1>Перекладач на миньйонську мову 🟡👓🍌</h1>
+<img src="20.png" class="big_minion">
+  <textarea id="inputText" placeholder="Запиши фразу українською..."></textarea><br>
+  <button onclick="translateToMinion()">Перекласти</button>
+
+  <div class="output" id="outputText"></div>
+        </section>
+        <section class='section5' id='submit'>
             <div class='submit-wrapper'>
                 <h1>Minion Land🎉✨🎆</h1>
                 <div class='submit-form'>
