@@ -187,21 +187,21 @@ nav {
 }
 
 .team1 .team-item-top {
-    background: url(2.png);
+    background: url(8.png);
     background-repeat: no-repeat; /* не повторять */
     background-position: center; /* центрировать */
 
 }
 
 .team2 .team-item-top {
-    background: url(13.png);
+    background: url(7.png);
     
     background-repeat: no-repeat; /* не повторять */
     background-position: center; /* центрировать */
 }
 
 .team3 .team-item-top {
-    background: url(.png);
+    background: url(9.png);
     background-size: cover;
 }
 
@@ -234,7 +234,7 @@ nav {
 }
 
 .merch2 .merch-item-top {
-    background: url(1.png);
+    background: url(13.png);
     background-size: cover;
 }
 
