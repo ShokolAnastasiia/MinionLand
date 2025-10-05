@@ -187,14 +187,14 @@ nav {
 }
 
 .team1 .team-item-top {
-    background: url(13.png);
+    background: url(2.png);
     background-repeat: no-repeat; /* не повторять */
     background-position: center; /* центрировать */
 
 }
 
 .team2 .team-item-top {
-    background: url(7.png);
+    background: url(13.png);
     
     background-repeat: no-repeat; /* не повторять */
     background-position: center; /* центрировать */
